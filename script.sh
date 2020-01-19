@@ -133,7 +133,7 @@ function check () {
 }
 
 function main () {
-    rm log.txt
+    rm -rf log.txt
     # set up main loop by downloading first challenge file as new_challenge_purported
     download ${challenges[0]} new_challenge_purported
     for idx in "${!responses[@]}"; do
